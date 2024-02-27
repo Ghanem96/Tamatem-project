@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #C3001E !important;
+    mat-card-content{
+      margin: 0;
+    }
+    .flex-card {
+        width: 350px;
+        box-shadow:none;
+        img{
+            width: 128px;
+            height: 128px;
+        }
+ 
+      }
+      mat-form-field{
+          width: 100% !important;
+          input{
+            width: 100%;
+          }
+          ::ng-deep .mat-form-field-outline-thick {
+            color: #C3001E; /* Change outline color to red for thicker outlines */
+          }
+          mat-label{
+              color: #C3001E !important;
+          }
+          mat-hint{
+            color: #C3001E !important;
+          }
+      }
+      mat-card-actions{
+        text-align: end;
+        button{
+            background-color: #C3001E;
+            color: #fff;
+            width: 98px;
+            height: 36px;
+        }
+      }
+      mat-card-header{
+        justify-content: center;
+      }
+      .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: #C3001E !important;
+    }
+  }

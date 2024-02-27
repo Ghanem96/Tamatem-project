@@ -1,0 +1,25 @@
+<div class="container">
+  <mat-card class="flex-card" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card-header fxLayoutAlign="center">
+      <mat-card-title><img src="../../../assets/tamatemLogo.png"></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="LoginForm" [formGroup]="form">
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" formControlName="email" [ngClass]="getEmailFieldClasses()">
+            <mat-error *ngIf="form.get('email')?.touched">
+              Invalid Email.
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Password" formControlName="password">
+          </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="end" >
+      <button mat-raised-button color="primary" >Login</button>
+    </mat-card-actions>
+  </mat-card> 
+</div>
